@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain"></stringProp>
+        <stringProp name="HTTPSampler.port">${SERVER_API_PORT}</stringProp>
+        <stringProp name="HTTPSampler.protocol">${SERVER_API_PROTO}</stringProp>
+        <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+        <stringProp name="HTTPSampler.path"></stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+        <boolProp name="clearEachIteration">false</boolProp>
+        <boolProp name="useExpires">true</boolProp>
+        <boolProp name="CacheManager.controlledByThread">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="SALT" elementType="Argument">
+            <stringProp name="Argument.name">SALT</stringProp>
+            <stringProp name="Argument.value">${START_DATE}${START_TIME}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SERVER_API_HOST" elementType="Argument">
+            <stringProp name="Argument.name">SERVER_API_HOST</stringProp>
+            <stringProp name="Argument.value">191.168.14.163</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SERVER_API_PORT" elementType="Argument">
+            <stringProp name="Argument.name">SERVER_API_PORT</stringProp>
+            <stringProp name="Argument.value">7020</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SERVER_API_PROTO" elementType="Argument">
+            <stringProp name="Argument.name">SERVER_API_PROTO</stringProp>
+            <stringProp name="Argument.value">http</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="USER_NAME" elementType="Argument">
+            <stringProp name="Argument.name">USER_NAME</stringProp>
+            <stringProp name="Argument.value">joe.borg</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="USER_PASS" elementType="Argument">
+            <stringProp name="Argument.name">USER_PASS</stringProp>
+            <stringProp name="Argument.value">Haudsysops123!</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="AUTH_TOKEN" elementType="Argument">
+            <stringProp name="Argument.name">AUTH_TOKEN</stringProp>
+            <stringProp name="Argument.value">NONE</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SERVER_LDAP_HOST" elementType="Argument">
+            <stringProp name="Argument.name">SERVER_LDAP_HOST</stringProp>
+            <stringProp name="Argument.value">191.255.15.251</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SERVER_LDAP_PORT" elementType="Argument">
+            <stringProp name="Argument.name">SERVER_LDAP_PORT</stringProp>
+            <stringProp name="Argument.value">3268</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SERVER_DATABASE_HOST" elementType="Argument">
+            <stringProp name="Argument.name">SERVER_DATABASE_HOST</stringProp>
+            <stringProp name="Argument.value">192.168.14.156</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SERVER_DATABASE_USERNAME" elementType="Argument">
+            <stringProp name="Argument.name">SERVER_DATABASE_USERNAME</stringProp>
+            <stringProp name="Argument.value">cpiccinino</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="SERVER_DATABASE_PASSWORD" elementType="Argument">
+            <stringProp name="Argument.name">SERVER_DATABASE_PASSWORD</stringProp>
+            <stringProp name="Argument.value">c</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="USER_API_TOKEN" elementType="Argument">
+            <stringProp name="Argument.name">USER_API_TOKEN</stringProp>
+            <stringProp name="Argument.value">NONE</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="CDR_ID_MAX" elementType="Argument">
+            <stringProp name="Argument.name">CDR_ID_MAX</stringProp>
+            <stringProp name="Argument.value">NONE</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="CLIENT_IP" elementType="Argument">
+            <stringProp name="Argument.name">CLIENT_IP</stringProp>
+            <stringProp name="Argument.value">191.255.17.80</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Content-Type</stringProp>
+            <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+          </elementProp>
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Accept</stringProp>
+            <stringProp name="Header.value">application/json;charset=UTF-8</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC Connection Configuration" enabled="true">
+        <boolProp name="autocommit">true</boolProp>
+        <stringProp name="checkQuery"></stringProp>
+        <stringProp name="connectionAge">5000</stringProp>
+        <stringProp name="connectionProperties"></stringProp>
+        <stringProp name="dataSource"></stringProp>
+        <stringProp name="dbUrl">jdbc:mysql://${SERVER_DATABASE_HOST}:3306</stringProp>
+        <stringProp name="driver">com.mysql.cj.jdbc.Driver</stringProp>
+        <stringProp name="initQuery"></stringProp>
+        <boolProp name="keepAlive">true</boolProp>
+        <stringProp name="password">cpiccinino</stringProp>
+        <stringProp name="poolMax">0</stringProp>
+        <boolProp name="preinit">false</boolProp>
+        <stringProp name="timeout">10000</stringProp>
+        <stringProp name="transactionIsolation">DEFAULT</stringProp>
+        <stringProp name="trimInterval">60000</stringProp>
+        <stringProp name="username">cpiccinino</stringProp>
+      </JDBCDataSource>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

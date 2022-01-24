@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="AdvancedStatistics" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="AdvancedStatisticsAPI" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="AUTH_IMS_SHARED_KEY" elementType="Argument">
+              <stringProp name="Argument.name">AUTH_IMS_SHARED_KEY</stringProp>
+              <stringProp name="Argument.value">vquriramok3afn2c</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="AUTH_SYSTEM" elementType="Argument">
+              <stringProp name="Argument.name">AUTH_SYSTEM</stringProp>
+              <stringProp name="Argument.value">ims</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="AUTH_USER_NAME" elementType="Argument">
+              <stringProp name="Argument.name">AUTH_USER_NAME</stringProp>
+              <stringProp name="Argument.value">qatest.admin@internal.haud</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <JDBCDataSource guiclass="TestBeanGUI" testclass="JDBCDataSource" testname="JDBC Connection Configuration" enabled="true">
+          <boolProp name="autocommit">true</boolProp>
+          <stringProp name="checkQuery"></stringProp>
+          <stringProp name="connectionAge">5000</stringProp>
+          <stringProp name="connectionProperties"></stringProp>
+          <stringProp name="dataSource">dbhaud3_cdr</stringProp>
+          <stringProp name="dbUrl">jdbc:mysql://${SERVER_DATABASE_HOST}:3306</stringProp>
+          <stringProp name="driver">com.mysql.cj.jdbc.Driver</stringProp>
+          <stringProp name="initQuery"></stringProp>
+          <boolProp name="keepAlive">true</boolProp>
+          <stringProp name="password">k7sF7DPpUO</stringProp>
+          <stringProp name="poolMax">0</stringProp>
+          <boolProp name="preinit">false</boolProp>
+          <stringProp name="timeout">10000</stringProp>
+          <stringProp name="transactionIsolation">TRANSACTION_SERIALIZABLE</stringProp>
+          <stringProp name="trimInterval">60000</stringProp>
+          <stringProp name="username">cpiccinino</stringProp>
+        </JDBCDataSource>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="1- AdvancedStatistics | Get Statistics" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&#xd;
+	&quot;system&quot;: &quot;ims&quot;,&#xd;
+	&quot;user&quot;: &quot;qatest.admin@internal.haud&quot;,&#xd;
+	&quot;time&quot;: ${AUTH_TIME},&#xd;
+	&quot;hash&quot;: &quot;${API_02_AUTH_HASH}&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">192.168.14.163</stringProp>
+          <stringProp name="HTTPSampler.port">7020</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/v2/auth</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <JMESPathAssertion guiclass="JMESPathAssertionGui" testclass="JMESPathAssertion" testname="Assert Token" enabled="true">
+            <stringProp name="JMES_PATH">token</stringProp>
+            <stringProp name="EXPECTED_VALUE">^(\d+)$</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </JMESPathAssertion>
+          <hashTree/>
+          <JMESPathAssertion guiclass="JMESPathAssertionGui" testclass="JMESPathAssertion" testname="Assert Key" enabled="true">
+            <stringProp name="JMES_PATH">key</stringProp>
+            <stringProp name="EXPECTED_VALUE"></stringProp>
+            <boolProp name="JSONVALIDATION">false</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">false</boolProp>
+          </JMESPathAssertion>
+          <hashTree/>
+          <JMESPathAssertion guiclass="JMESPathAssertionGui" testclass="JMESPathAssertion" testname="Assert Expire" enabled="true">
+            <stringProp name="JMES_PATH">expire</stringProp>
+            <stringProp name="EXPECTED_VALUE">^(\d+)$</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">true</boolProp>
+          </JMESPathAssertion>
+          <hashTree/>
+          <JMESPathAssertion guiclass="JMESPathAssertionGui" testclass="JMESPathAssertion" testname="Assert IP" enabled="true">
+            <stringProp name="JMES_PATH">ip</stringProp>
+            <stringProp name="EXPECTED_VALUE">${CLIENT_IP}</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">false</boolProp>
+          </JMESPathAssertion>
+          <hashTree/>
+          <JMESPathAssertion guiclass="JMESPathAssertionGui" testclass="JMESPathAssertion" testname="Assert Status" enabled="true">
+            <stringProp name="JMES_PATH">status</stringProp>
+            <stringProp name="EXPECTED_VALUE">OK</stringProp>
+            <boolProp name="JSONVALIDATION">true</boolProp>
+            <boolProp name="EXPECT_NULL">false</boolProp>
+            <boolProp name="INVERT">false</boolProp>
+            <boolProp name="ISREGEX">false</boolProp>
+          </JMESPathAssertion>
+          <hashTree/>
+          <JMESPathExtractor guiclass="JMESPathExtractorGui" testclass="JMESPathExtractor" testname="Extract Key" enabled="true">
+            <stringProp name="JMESExtractor.referenceName">AUTH_KEY</stringProp>
+            <stringProp name="JMESExtractor.jmesPathExpr">key</stringProp>
+            <stringProp name="JMESExtractor.matchNumber">1</stringProp>
+            <stringProp name="JMESExtractor.defaultValue">NONE</stringProp>
+          </JMESPathExtractor>
+          <hashTree/>
+          <JMESPathExtractor guiclass="JMESPathExtractorGui" testclass="JMESPathExtractor" testname="Extract ID" enabled="true">
+            <stringProp name="JMESExtractor.referenceName">AUTH_ID</stringProp>
+            <stringProp name="JMESExtractor.jmesPathExpr">token</stringProp>
+            <stringProp name="JMESExtractor.matchNumber">1</stringProp>
+            <stringProp name="JMESExtractor.defaultValue">NONE</stringProp>
+          </JMESPathExtractor>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert headers" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="103171775">HTTP/1.1 200</stringProp>
+              <stringProp name="1782658683">X-Frame-Options: SAMEORIGIN</stringProp>
+              <stringProp name="935240832">X-XSS-Protection: 1; mode=block</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">16</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Assert header no Content-Type JSON" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1510192575">Content-Type: application/json;charset=UTF-8</stringProp>
+              <stringProp name="2066544187">Content-Type: application/json</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">52</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
+            <stringProp name="DurationAssertion.duration">2000</stringProp>
+            <stringProp name="Assertion.scope">all</stringProp>
+          </DurationAssertion>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

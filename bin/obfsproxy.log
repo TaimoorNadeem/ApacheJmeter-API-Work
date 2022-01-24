@@ -1,0 +1,77 @@
+2020-07-03 16:03:07,982 [WARNING] Obfsproxy (version: 0.2.13) starting up.
+2020-07-03 16:03:07,983 [INFO] OBFSSOCKSv5Factory starting on 10194
+2020-07-03 16:03:07,983 [INFO] Starting factory <obfsproxy.network.socks.OBFSSOCKSv5Factory instance at 0x7fd302195f50>
+2020-07-03 16:03:07,983 [INFO] Launched 'socks' listener at '[scrubbed]:10194' for transport 'obfs2'.
+2020-07-03 17:03:08,061 [INFO] Heartbeat: obfsproxy's uptime is 1 hour(s) and 0 minute(s).
+2020-07-03 17:03:08,061 [INFO] Heartbeat: During the last 1 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2020-07-06 13:08:27,448 [WARNING] Obfsproxy (version: 0.2.13) starting up.
+2020-07-06 13:08:27,449 [INFO] OBFSSOCKSv5Factory starting on 10194
+2020-07-06 13:08:27,449 [INFO] Starting factory <obfsproxy.network.socks.OBFSSOCKSv5Factory instance at 0x7f3999277f50>
+2020-07-06 13:08:27,449 [INFO] Launched 'socks' listener at '[scrubbed]:10194' for transport 'obfs2'.
+2020-07-08 15:57:14,662 [WARNING] Obfsproxy (version: 0.2.13) starting up.
+2020-07-08 15:57:14,662 [INFO] OBFSSOCKSv5Factory starting on 10194
+2020-07-08 15:57:14,662 [INFO] Starting factory <obfsproxy.network.socks.OBFSSOCKSv5Factory instance at 0x7f005f810f50>
+2020-07-08 15:57:14,663 [INFO] Launched 'socks' listener at '[scrubbed]:10194' for transport 'obfs2'.
+2020-07-08 16:57:15,975 [INFO] Heartbeat: obfsproxy's uptime is 1 hour(s) and 0 minute(s).
+2020-07-08 16:57:15,978 [INFO] Heartbeat: During the last 1 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2020-07-08 17:57:14,662 [INFO] Heartbeat: obfsproxy's uptime is 2 hour(s) and 0 minute(s).
+2020-07-08 17:57:14,663 [INFO] Heartbeat: During the last 2 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2020-07-08 18:57:14,665 [INFO] Heartbeat: obfsproxy's uptime is 3 hour(s) and 0 minute(s).
+2020-07-08 18:57:14,691 [INFO] Heartbeat: During the last 3 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-02-02 11:16:46,280 [WARNING] Obfsproxy (version: 0.2.13) starting up.
+2021-02-02 11:16:46,280 [INFO] OBFSSOCKSv5Factory starting on 10194
+2021-02-02 11:16:46,281 [INFO] Starting factory <obfsproxy.network.socks.OBFSSOCKSv5Factory instance at 0x7f3ae8e09eb0>
+2021-02-02 11:16:46,281 [INFO] Launched 'socks' listener at '[scrubbed]:10194' for transport 'obfs2'.
+2021-02-02 12:16:46,280 [INFO] Heartbeat: obfsproxy's uptime is 1 hour(s) and 0 minute(s).
+2021-02-02 12:16:46,281 [INFO] Heartbeat: During the last 1 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-02-02 13:16:46,280 [INFO] Heartbeat: obfsproxy's uptime is 2 hour(s) and 0 minute(s).
+2021-02-02 13:16:46,281 [INFO] Heartbeat: During the last 2 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-02-03 11:41:27,788 [WARNING] Obfsproxy (version: 0.2.13) starting up.
+2021-02-03 11:41:27,788 [INFO] OBFSSOCKSv5Factory starting on 10194
+2021-02-03 11:41:27,788 [INFO] Starting factory <obfsproxy.network.socks.OBFSSOCKSv5Factory instance at 0x7f0c2bbc4eb0>
+2021-02-03 11:41:27,788 [INFO] Launched 'socks' listener at '[scrubbed]:10194' for transport 'obfs2'.
+2021-02-03 12:41:27,788 [INFO] Heartbeat: obfsproxy's uptime is 1 hour(s) and 0 minute(s).
+2021-02-03 12:41:27,788 [INFO] Heartbeat: During the last 1 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-02-03 13:41:27,790 [INFO] Heartbeat: obfsproxy's uptime is 2 hour(s) and 0 minute(s).
+2021-02-03 13:41:27,791 [INFO] Heartbeat: During the last 2 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-02-03 14:41:27,791 [INFO] Heartbeat: obfsproxy's uptime is 3 hour(s) and 0 minute(s).
+2021-02-03 14:41:27,792 [INFO] Heartbeat: During the last 3 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-02-03 15:41:27,792 [INFO] Heartbeat: obfsproxy's uptime is 4 hour(s) and 0 minute(s).
+2021-02-03 15:41:27,793 [INFO] Heartbeat: During the last 4 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-02-03 16:41:27,815 [INFO] Heartbeat: obfsproxy's uptime is 5 hour(s) and 0 minute(s).
+2021-02-03 16:41:27,816 [INFO] Heartbeat: During the last 5 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-02-10 10:32:52,003 [WARNING] Obfsproxy (version: 0.2.13) starting up.
+2021-02-10 10:32:52,003 [INFO] OBFSSOCKSv5Factory starting on 10194
+2021-02-10 10:32:52,004 [INFO] Starting factory <obfsproxy.network.socks.OBFSSOCKSv5Factory instance at 0x7fd0349a5eb0>
+2021-02-10 10:32:52,004 [INFO] Launched 'socks' listener at '[scrubbed]:10194' for transport 'obfs2'.
+2021-02-10 11:32:52,005 [INFO] Heartbeat: obfsproxy's uptime is 1 hour(s) and 0 minute(s).
+2021-02-10 11:32:52,005 [INFO] Heartbeat: During the last 1 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-02-10 12:32:52,006 [INFO] Heartbeat: obfsproxy's uptime is 2 hour(s) and 0 minute(s).
+2021-02-10 12:32:52,008 [INFO] Heartbeat: During the last 2 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-03-09 11:54:33,697 [WARNING] Obfsproxy (version: 0.2.13) starting up.
+2021-03-09 11:54:33,698 [INFO] OBFSSOCKSv5Factory starting on 10194
+2021-03-09 11:54:33,698 [INFO] Starting factory <obfsproxy.network.socks.OBFSSOCKSv5Factory instance at 0x7fae0ed84eb0>
+2021-03-09 11:54:33,699 [INFO] Launched 'socks' listener at '[scrubbed]:10194' for transport 'obfs2'.
+2021-03-09 12:54:33,703 [INFO] Heartbeat: obfsproxy's uptime is 1 hour(s) and 0 minute(s).
+2021-03-09 12:54:33,703 [INFO] Heartbeat: During the last 1 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-03-09 13:54:33,703 [INFO] Heartbeat: obfsproxy's uptime is 2 hour(s) and 0 minute(s).
+2021-03-09 13:54:33,728 [INFO] Heartbeat: During the last 2 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-03-09 14:54:33,795 [INFO] Heartbeat: obfsproxy's uptime is 3 hour(s) and 0 minute(s).
+2021-03-09 14:54:33,798 [INFO] Heartbeat: During the last 3 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-03-09 15:54:33,795 [INFO] Heartbeat: obfsproxy's uptime is 4 hour(s) and 0 minute(s).
+2021-03-09 15:54:33,797 [INFO] Heartbeat: During the last 4 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-03-09 16:54:33,699 [INFO] Heartbeat: obfsproxy's uptime is 5 hour(s) and 0 minute(s).
+2021-03-09 16:54:33,702 [INFO] Heartbeat: During the last 5 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-03-09 17:54:33,699 [INFO] Heartbeat: obfsproxy's uptime is 6 hour(s) and 0 minute(s).
+2021-03-09 17:54:33,700 [INFO] Heartbeat: During the last 6 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-03-09 18:54:33,704 [INFO] Heartbeat: obfsproxy's uptime is 7 hour(s) and 0 minute(s).
+2021-03-09 18:54:33,707 [INFO] Heartbeat: During the last 7 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-03-22 15:20:00,173 [WARNING] Obfsproxy (version: 0.2.13) starting up.
+2021-03-22 15:20:00,174 [INFO] OBFSSOCKSv5Factory starting on 10194
+2021-03-22 15:20:00,174 [INFO] Starting factory <obfsproxy.network.socks.OBFSSOCKSv5Factory instance at 0x7f09877fbaa0>
+2021-03-22 15:20:00,174 [INFO] Launched 'socks' listener at '[scrubbed]:10194' for transport 'obfs2'.
+2021-03-22 15:23:26,438 [ERROR] CMD CONNECT: An error occurred while connecting: 113: No route to host.
+2021-03-22 16:20:00,175 [INFO] Heartbeat: obfsproxy's uptime is 1 hour(s) and 0 minute(s).
+2021-03-22 16:20:00,175 [INFO] Heartbeat: During the last 1 hour(s) we saw 0 connection(s) from 0 unique address(es).
+2021-03-22 17:20:00,174 [INFO] Heartbeat: obfsproxy's uptime is 2 hour(s) and 0 minute(s).
+2021-03-22 17:20:00,174 [INFO] Heartbeat: During the last 2 hour(s) we saw 0 connection(s) from 0 unique address(es).
